@@ -14,9 +14,8 @@ map.on('style.load', function () {
 
   // Manually provided data (no need to read CSV)
   const sites = [
-{"EP Site ID": "PH-NUE-00616", "Latitude": 15.657687, "Longitude": 120.768786},
-{"EP Site ID": "PH-ISA-00232", "Latitude": 16.908815, "Longitude": 121.80662}
-
+    {"EP Site ID": "PH-NUE-00616", "Latitude": 15.657687, "Longitude": 120.768786},
+    {"EP Site ID": "PH-ISA-00232", "Latitude": 16.908815, "Longitude": 121.80662}
   ];
 
   const coordinates = [];
