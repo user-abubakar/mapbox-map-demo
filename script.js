@@ -1,5 +1,6 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiYWJ1YmFrYXI0MzQzIiwiYSI6ImNtYnRocTF4NzAzdWcybG9tNHpyeHFzcHIifQ.wIRLBqeEDOWq7UhuzBngTQ';  // Replace with your actual Mapbox access token
 
+// Declare map only once
 const map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/mapbox/streets-v12',
@@ -9,14 +10,13 @@ const map = new mapboxgl.Map({
 
 // Wait for the map style to load before adding markers or lines
 map.on('style.load', function () {
-
   console.log("Map style loaded!");
 
   // Manually provided data (no need to read CSV)
   const sites = [
-    { "EP Site ID": "PH-ILN-00039", "Latitude": 18.15558333, "Longitude": 120.5377333 },
-    { "EP Site ID": "PH-NCR-01279", "Latitude": 14.723528, "Longitude": 121.041923 },
-    { "EP Site ID": "PH-NUV-00327", "Latitude": 16.44049722, "Longitude": 121.1005778 }
+{"EP Site ID": "PH-NUE-00616", "Latitude": 15.657687, "Longitude": 120.768786},
+{"EP Site ID": "PH-ISA-00232", "Latitude": 16.908815, "Longitude": 121.80662}
+
   ];
 
   const coordinates = [];
